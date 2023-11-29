@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="survey.css">
+</head>
+<body>
+    <form id="survey-form" onsubmit="return false;">
+        <div class="form-group">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" required>
+        </div>
+        <div class="form-group">
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" required>
+        </div>
+        <div class="form-group">
+            <label for="date-of-birth">Date of Birth:</label>
+            <input type="date" id="date-of-birth" required>
+        </div>
+        <div class="form-group">
+            <label for="country">Country:</label>
+            <select id="country" required>
+                <option value="">Select Country</option>
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <!-- Add more countries here -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Gender:</label>
+            <input type="checkbox" id="male" name="gender" value="male"> Male
+            <input type="checkbox" id="female" name="gender" value="female"> Female
+        </div>
+        <div class="form-group">
+            <label for="profession">Profession:</label>
+            <input type="text" id="profession" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+            <label for="mobile-number">Mobile Number:</label>
+            <input type="tel" id="mobile-number" required>
+        </div>
+        <div class="form-buttons">
+            <button type="submit" onclick="submitForm()">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+    <div id="popup" class="hidden">
+        <div id="popup-content">
+            <button id="close-popup" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+    <script src="survey.js"></script>
+</body>
+</html>
+</body>
+</html>
